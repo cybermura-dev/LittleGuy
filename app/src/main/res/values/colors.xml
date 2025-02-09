@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App's main colors -->
+    <color name="primary_color">#FFFFFFCC</color>
+    <color name="text_color">#FFC3B1E1</color>
+
+    <!-- Navigation colors -->
+    <color name="selected_nav_color">#FF6B588C</color>
+    <color name="nav_icon_color">#FF303030</color>
+
+    <!-- Shades of gray -->
+    <color name="light_gray">#FFE5E5E5</color>
+    <color name="gray">#FF333333</color>
+    <color name="semi_gray">#80333333</color>
+
+    <!-- Basic colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

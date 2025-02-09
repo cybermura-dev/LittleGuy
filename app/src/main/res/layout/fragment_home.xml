@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_scroll_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_scroll_end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <ImageView
+            android:id="@+id/menu_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_header"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_about_us"
+            app:layout_constraintEnd_toEndOf="@id/guideline_scroll_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_scroll_start"
+            app:layout_constraintTop_toBottomOf="@id/menu_header" />
+
+        <ImageView
+            android:id="@+id/app_2021_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="36dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_2021_desc"
+            app:layout_constraintStart_toStartOf="@id/guideline_scroll_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_scroll_end"
+            app:layout_constraintTop_toBottomOf="@id/btn_about_us" />
+
+        <ImageView
+            android:id="@+id/app_stages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_stages"
+            app:layout_constraintTop_toBottomOf="@id/app_2021_desc" />
+
+        <ImageView
+            android:id="@+id/app_2023_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_2023_desc"
+            app:layout_constraintStart_toStartOf="@id/guideline_scroll_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_scroll_end"
+            app:layout_constraintTop_toBottomOf="@id/app_stages" />
+
+        <ImageView
+            android:id="@+id/app_purpose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_purpose"
+            app:layout_constraintStart_toStartOf="@id/guideline_scroll_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_scroll_end"
+            app:layout_constraintTop_toBottomOf="@id/app_2023_desc" />
+
+        <ImageView
+            android:id="@+id/app_links"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_health"
+            app:layout_constraintStart_toStartOf="@id/guideline_scroll_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_scroll_end"
+            app:layout_constraintTop_toBottomOf="@id/app_purpose" />
+
+        <ImageView
+            android:id="@+id/app_health"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_links"
+            app:layout_constraintStart_toStartOf="@id/guideline_scroll_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_scroll_end"
+            app:layout_constraintTop_toBottomOf="@id/app_links" />
+
+        <ImageView
+            android:id="@+id/first_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_group_first"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_health" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttons_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_group"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread">
+
+            <ImageView
+                android:id="@+id/second_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_group_second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/third_group"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1" />
+
+            <ImageView
+                android:id="@+id/third_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_group_third"
+                app:layout_constraintStart_toEndOf="@id/second_group"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

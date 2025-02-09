@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".LittleGuyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LittleGuy"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.ArticleDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.WorkoutActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.GamesActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.TrackersActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.SleepTrackerActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.PersonalDataEditorActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.PromotionArticlesActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.HealthArticlesActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.FoodArticlesActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.MenuActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.GetStartedActivity"
+            android:exported="false"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" />
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.LittleGuy.SplashScreen"
+            tools:ignore="DiscouragedApi">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
