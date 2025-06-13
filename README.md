@@ -250,4 +250,6 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/takeshikodev/LittleGuy/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Takeshiko 
