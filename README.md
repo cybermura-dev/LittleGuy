@@ -56,7 +56,7 @@
 
 1. **Clone the Repository:**
      ```bash
-     git clone https://github.com/takeshikodev/LittleGuy.git
+     git clone https://github.com/cybermura-dev/LittleGuy.git
      cd LittleGuy
      ```
 
@@ -252,4 +252,4 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2025 Takeshiko 
+Copyright (c) 2025 cybermura
